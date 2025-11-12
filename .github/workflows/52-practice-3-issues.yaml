@@ -1,0 +1,8 @@
+name: 52. Time to Practice Part 3 Issues
+on: issues
+jobs:
+  issue-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show issue info
+        run: echo "${{ toJSON(github.event) }}"
